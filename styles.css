@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    position: relative;
+    background-color: rgb(216, 242, 250);
 
 }
 article{
@@ -229,6 +231,10 @@ width: 100%;
   align-items: center;
   width: 100%;
   height: 400px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
  }
  .img_1{
   width: 60em;
@@ -236,7 +242,7 @@ width: 100%;
   max-width: 100%;
   max-height: 100%;
  }
-
+/*form*/
 form {
   display: flex;
   flex-direction: column;
@@ -248,15 +254,74 @@ form {
     width: 100%;
     height: 5px;
   }
-  footer{
-    background:rgb(83,151,179);
-}
-footer {
-    color: whitesmoke;
-    text-align: center;
-}
+
 #iconos i {
     font-size:18px;
     color: whitesmoke;
     padding: 2 8px;
+}
+/*cards*/
+.container{
+  width: 100%;
+  height: 45em;
+  display: flex;
+  justify-content: center;
+  margin: 5em;
+  flex-wrap: wrap;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container .card{
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  max-width: 100%;
+
+}
+
+.container .card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+  width: 330px;
+  height: 220px;
+  max-width: 100%;
+}
+
+
+.container .card p{
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.container .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
+}
+
+footer{
+  flex-direction: row;
+  background:rgb(83,151,179);
+  color: whitesmoke;
+  text-align: center;
+  bottom: 35em;
+}
+
+@media(max-width: 1200px){
+  .container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+
+  }
 }
