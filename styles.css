@@ -156,8 +156,8 @@ button:hover {
     .logo{
     float: left;
     flex-direction: column;
-    width: 2.5em;
-    height: 2.5em;
+    width: auto;
+    height: auto;
     position: relative;
     top: 0;
     justify-content: left;
